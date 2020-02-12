@@ -1,0 +1,124 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg) 
+	.hidden-main-menu
+		display: block !important
+		ul
+			display: flex
+			li a
+				font-size: inherit
+	.hide-on-mob ul,.hide-on-mob
+		display: none	
+	.dropdown-main.active
+		top: 3%
+	footer h4
+		font-size: 15px	
+	.dropdown-main
+	.item-desc
+		top: 8%
+	.drop-menu-widget .item-footer
+		bottom: 48%
+	.search-form button svg
+		float: right
+		width: 60%
+		width: 34%
+	.main-search.active
+		top: 2%
+	.banner-thumb h1
+		font-size: 85px	
+	.contact-info .footer-phone
+		font-size: 16px
+	.contact-widget .text-right
+		text-align: inherit
+// ≥992px
++media-breakpoint-down(md)
+	p.footer-text
+		font-size: 14px
+	.banner-price h3
+		font-size: 21px
+	.yellow-btn
+		font-size: 13px	
+	.main-banner p span
+		font-size: 11px	
+	.banner-thumb p
+    font-size: 18px
+	.banner-thumb h1
+    font-size: 65px
+	.main-search.active
+		top: 1.2%
+	h2.big-title
+		font-size: 38px
+	.additional-header .shop-icons
+		float: right
+	.dropdown-main.active
+		top: 1.7%
+	.item-desc
+    top: 1%
+	.drop-menu-widget .item-footer
+    bottom: 62%	
+	table
+   	font-size: 11px 
+// ≥768px
++media-breakpoint-down(sm)
+	.item-desc
+		top: 18%
+	.drop-menu-widget .item-footer
+		bottom: 30%
+	.header-tabs 
+		ul
+			display: block
+			li
+				margin-bottom: 20px
+	.hidden-main-menu
+		ul
+			display: block
+	.search-form button svg
+		width: 90%
+	h2.big-title span
+		padding: 0 33px	
+// ≥576px
++media-breakpoint-down(xs)
+	.header-tabs ul li
+		font-size: 16px
+	.banner-thumb h1
+    font-size: 46px
+	.banner-thumb p
+		font-size: 12px
+	.banner-price h3
+		font-size: 19px	
+	h2.big-title
+		font-size: 22px
+		span
+			padding: 0 20px
+	.second-btn
+		font-size: 10px
+	.additional-header
+		font-size: 1em
+	.shop-cat h3
+		font-size: 22px
+	.shop-title h2
+		font-size: 23px
+	.additional-header
+		line-height: 3.5
+	.main-search.active
+		top: 0.8%
+	.main-banner
+		padding-top: 0	
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+	
+// ≤768px
++media-breakpoint-up(md)
+	
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
+	
