@@ -27,9 +27,26 @@
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="libs/owl.carousel/owl.carousel.min.css">
 	<style>.main-header{    border-bottom: 1px solid #ddd;}</style>
+	<script src="https://office.agenyz.com/assets/js/agenyz-shop.js"></script>
 </head>
 
 <body>
+	<agenyz-catalog
+  crm="https://office.agenyz.com/api/34469793"
+  wh="https://wh.agenyz.com/api/34469793"
+  warehouse-id="0" 
+  referral-param-name="bonus"></agenyz-catalog>
+
+<agenyz-floating-cart style="top: 100px;
+    right: 100px;
+    position: fixed;
+    z-index: 10000;"></agenyz-floating-cart>
+
+<agenyz-cart></agenyz-cart>
+
+<agenyz-buy-button sku="GRU07" image-url="./shop_files/drazze_white-600--540x468.png"></agenyz-buy-button>
+<agenyz-product-price sku="GRU07"></agenyz-product-price>
+<agenyz-product-original-price sku="GRU07"></agenyz-product-original-price>
 	<div class="additional-header">
 		<div class="container">
 			<div class="row">
@@ -1171,35 +1188,11 @@
 </div>
 </div>
 </footer>
-<agenyz-catalog
-  crm="https://office.agenyz.com/api/34469793"
-  wh="https://wh.agenyz.com/api/34469793"
-  warehouse-id="0" 
-  referral-param-name="bonus"></agenyz-catalog>
 
-Плавающая корзина
-
-<agenyz-floating-cart style="top: 100px;
-    right: 100px;
-    position: fixed;
-    z-index: 10000;"></agenyz-floating-cart>
-
-Popup корзина
-<agenyz-cart></agenyz-cart>
-
-Кнопка купить
-<agenyz-buy-button sku="GRU07"
-                   image-url="./shop_files/drazze_white-600--540x468.png"></agenyz-buy-button>
-
-Вывод цены товара
-<agenyz-product-price sku="GRU07"></agenyz-product-price>
-
-Вывод цены без скидки
-<agenyz-product-original-price sku="GRU07"></agenyz-product-original-price>
 <div class="overlay"></div>
 <div class="search-overlay"></div>
 <script src="js/scripts.min.js"></script>
 <script src="libs/owl.carousel/owl.carousel.min.js"></script>
-<script src="https://office.agenyz.com/assets/js/agenyz-shop.js"></script>
+
 </body>
 </html>
